@@ -6,17 +6,168 @@ body {
 
 /* */
 .page {
-  max-width: 1280px;
+  max-width: 1440px;
   min-width: 320px;
   margin: 0 auto;
-  font-family:  Arial, sans-serif; /* Добавить свой основной шрифт */
+  font-family: Arial, sans-serif;
+  /* Добавить свой основной шрифт */
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
-  background-color: #2A2C2F; /* Изменить*/
-  color: #2A2C2F; /*Уточнить и изменить */
+  background-color: #2A2C2F;
+  /* Изменить*/
+  color: #2A2C2F;
+  /*Уточнить и изменить */
+}
+
+/* Очериание */
+.outline {
+  border: solid red 1px;
+
+}
+
+/* header */
+.profile {
+  max-width: calc(100% - 10px);
+  margin: 50px 0 100px 0;
+  display: flex;
+  align-items: center;
+}
+
+
+.profile__photo {
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 50%;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+/* изменить на текс */
+.profile__link-conteiner {
+  margin-bottom: 0;
+}
+
+.profile__text {
+  color: red;
+  margin-top: 0;
+}
+
+.profile__info {
+  display: flex;
+ flex-direction: column;
+  min-height: 250px;
+  justify-content: space-between;
+ }
+
+.profile__link-conteiner {
+  display: flex;
+  align-items: center;
+}
+.profile__links {
+  margin-right: 5px;
+}
+
+.profile__link-titel-tiktok {
+  color: red;
+  margin-right: 30px;
+}
+
+.profile__link-titel-instagram {
+  color: red;
+}
+
+
+@media screen and (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .profile__photo {
+    margin-bottom: 10px;
+  }
+
+  .profile__link-conteiner {
+    display: grid;
+    grid-template-columns: repeat(2, fit-content(300px));
+    row-gap: 10px;
+    justify-content: center;
+  }
+
+  .profile__link-titel-tiktok {
+    color: red;
+    margin-right: 0;
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 425px) {
+
+}
+
+
+
+
+/* фото-сетка  не забыть сменить на photos везде*/
+.fhotos {
+  max-width: calc(100% - 10px);
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, max-content));
+  gap: 40px 5px;
+  justify-content: space-around;
+}
+
+.fhoto {}
+
+.fhoto__text {
+  color: red;
+  max-width: 350px;
+  margin: 0;
+}
+
+.fhoto__image {
+  max-width: 350px;
+  margin: 10px 0;
+
+}
+
+@media screen and (min-width:880px) and (max-width: 1085px) {
+  .fhoto__image {
+    max-width: 400px;
+  }
+
+  .photos {
+    grid-template-columns: repeat(auto-fit, minmax(400px, max-content));
+  }
+
+  .fhoto__text {
+    max-width: 400px;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .fhotos {
+    gap: 10px 5px;
+    max-width: 300px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+  }
+
+  .fhoto__text {
+    max-width: 300px;
+    margin: 5px 0;
+  }
+
+  .fhoto__image {
+    max-width: 300px;
+  }
 
 }
