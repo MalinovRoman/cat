@@ -11,26 +11,27 @@
   <!-- <link rel="stylesheet" href="поработать с фавиконом"> -->
   <link rel="stylesheet" href="vendor/normalize.css"> <!-- здесь переделать пл БЭМ после полного написания CSS -->
   <link rel="stylesheet" href="style.css"> <!-- здесь переделать пл БЭМ после полного написания CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  
 </head>
-
-<body class="page outline">
+<body class="page outline outline">
   <header class="profile outline">
-
     <img class="profile__photo outline" src="images/hader__photo.jpg" alt="Фотография кота по имени Кокос">
-
     <div class="profile__info outline">
-      <h2 class="profile__text outline">Всем привет! Меня зовут кот Кокос и это мой официальный Сайт! Я кот породы мейн-кун из породистой семьи кошек. Я родился в июне 2021 года в Дмитровском районе Московской области и в возрасте 2 месяцев я обрел новую уютную семью, где меня очень любят и ценят. На этом сайте я хочу поделиться с вами своими фотографиями из моей счастливой кошачьей жизни.</h2>
+      <h2 class="profile__text outline">Всем привет! Меня зовут кот Кокос и это мой официальный Сайт! Я кот породы мейн-кун из породистой семьи кошек. Я родился в июле 2021 года в Дмитровском районе Московской области и в возрасте 3 месяцев я обрел новую уютную семью, где меня очень любят и ценят. На этом сайте я хочу поделиться с вами своими фотографиями из моей счастливой кошачьей жизни.</h2>
       <div class="profile__link-conteiner outline">
-        <img class="profile__links outline" src="images/icons8-тикток (1).svg" alt="">
-        <h3 class="profile__link-titel-tiktok outline">Мои смешные видео в Tik-Tok</h3>
-        <img class="profile__links outline" src="images/icons8-instagram-64.svg" alt="">
-        <h3 class="profile__link-titel-instagram outline">Мои фотографии в Instagram</h3>
-
+        <a class="profile__links outline" href="https://vm.tiktok.com/ZSdB84r4C" target="_blank">
+          <img class="outline" src="images/icons8-тикток (1).svg" alt="логотип Tik-Tok">
+          <p class="profile__link-titel outline">Мои смешные видео в Tik-Tok</p>
+        </a>
+       <a class="profile__links outline" href="www.instagram.com/cat_coconut_moscow_kiss" target="_blank">
+          <img class="outline"  src="images/icons8-instagram-64.svg" alt="логотип instagram">
+          <p class="profile__link-titel outline">Мои фотографии в Instagram</p>
+        </a>
       </div>
     </div>
-
     <div class="profile__links outline"></div>
-
   </header>
 
   <main class="content outline">
@@ -67,7 +68,7 @@
       </article>
       <article class="fhoto">
         <img class="fhoto__image" src="images/коту 3 месяца.jpg" alt="трехмесячный кот на кровати">
-        <h2 class="fhoto__text">3 месяца</h2>
+        <h2 class="fhoto__text">5 месяцев</h2>
       </article>
       <article class="fhoto">
         <img class="fhoto__image" src="images/photo_2022-04-03_22-48-28.jpg" alt="Кот и елка">
@@ -112,7 +113,12 @@
     </section>
   </main>
 
-  <footer class="footer"></footer>
+  <footer class="footer outline">
+    <p class="footer__author outline">&COPY; 2022 Malinov Roman</p>
+    <a class="footer__link outline" href="https://t.me/romanmalinov"> <img src="images/icons8-телеграмма-app (1).svg" alt="логотип telegram">
+      <p class="footer__linl-text">Для связи</p>
+    </a>
+  </footer>
 
 </body>
 
