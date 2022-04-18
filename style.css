@@ -1,6 +1,4 @@
-
 /* шрифты: */
-
 @font-face {
   font-family: 'Fira Sans Extra Condensed';
   font-style: normal;
@@ -9,8 +7,6 @@
   src: url('./vendor/fonts/FiraSansExtraCondensed-Regular.woff2') format('woff2'),
        url('./vendor/fonts/FiraSansExtraCondensed-Regular.woff') format('woff');
 }
-
-
 
 .page {
   max-width: 1440px;
@@ -24,20 +20,12 @@
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
   background-color: #474a4f;
-  /* Изменить*/
-  color: #2A2C2F;
-  /*Уточнить и изменить */
-}
-
-/* Очериание */
-.outline {
-  border: solid red 1px;
 }
 
 /* header */
 .profile {
   max-width: calc(100% - 10px);
-  margin: 50px 0 100px 0;
+  margin: 50px 0 50px 0;
   display: flex;
   align-items: center;
 }
@@ -73,7 +61,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
- }
+}
 
 .profile__links {
   margin-right: 5px;
@@ -99,8 +87,9 @@
 
 @media screen and (max-width: 1024px) {
   .profile__link-conteiner {
-   flex-direction: column;
+    flex-direction: column;
   }
+
   .profile__text {
     font-size: 25px;
   }
@@ -125,6 +114,7 @@
   .profile__links {
     align-items: center;
   }
+
   .profile__text {
     font-size: 22px;
   }
@@ -140,19 +130,22 @@
 
 }
 
+/* фото-сетка */
 
-
-
-@media screen and (max-width: 425px) {
-
+.content {
+  max-width: calc(100% - 10px);
 }
 
+.content__titel {
+  text-align: center;
+  margin-bottom: 10px;
+  color: rgb(103, 186, 218);
+  margin-top: 0;
+  font-size: 30px;
+  font-weight: 800;
+}
 
-
-
-/* фото-сетка  не забыть сменить на photos везде*/
-.fhotos {
-  max-width: calc(100% - 10px);
+.photos {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, max-content));
@@ -160,21 +153,21 @@
   justify-content: space-around;
 }
 
-.fhoto__text {
+.photo__text {
   color: rgb(103, 186, 218);
   font-size: 25px;
   max-width: 350px;
   margin: 0;
 }
 
-.fhoto__image {
+.photo__image {
   max-width: 350px;
   margin: 10px 0;
 
 }
 
-@media screen and (min-width:880px) and (max-width: 1085px) {
-  .fhoto__image {
+@media screen and (min-width: 880px) and (max-width: 1085px) {
+  .photo__image {
     max-width: 400px;
   }
 
@@ -182,40 +175,46 @@
     grid-template-columns: repeat(auto-fit, minmax(400px, max-content));
   }
 
-  .fhoto__text {
+  .photo__text {
     max-width: 400px;
     font-size: 20px;
   }
 }
 
+@media screen and (max-width: 768px) {
+  .content__titel {
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: 400;
+  }
+}
+
 
 @media screen and (max-width: 400px) {
-  .fhotos {
+  .photos {
     gap: 10px 0;
     max-width: 300px;
     grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
   }
 
-  .fhoto__text {
+  .photo__text {
     max-width: 300px;
     margin-top: 0;
   }
 
-  .fhoto__image {
+  .photo__image {
     max-width: 300px;
     margin-bottom: 0;
   }
 
 }
 
-.fhoto__image:hover {
-
-transform: scale(105%);
-cursor: pointer;
+.photo__image:hover {
+  transform: scale(105%);
+  cursor: pointer;
 }
 
 /* Footer */
-
 .footer {
   display: flex;
   justify-content: space-between;
@@ -230,9 +229,11 @@ cursor: pointer;
 
 .footer__link {
   display: flex;
-  color: rgb(103, 186, 218);;
+  color: rgb(103, 186, 218);
+  ;
   text-decoration: none;
   font-size: 18px;
+  align-content: center;
 }
 
 .footer__linl-text {
@@ -243,4 +244,9 @@ cursor: pointer;
 .footer__link:hover {
   cursor: pointer;
   opacity: 0.7;
-  }
+}
+
+
+ /* .outline {
+  border: solid red 1px;
+} */
